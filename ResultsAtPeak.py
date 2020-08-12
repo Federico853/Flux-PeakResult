@@ -56,10 +56,10 @@ f = open("Data.txt", "w")
 for t in range(len(VariationParamName)):
     f.write(VariationParamName[t])
     f.write(",")
-f.write("Ip,Tp,T1,T2,T3,T4,T5,T6,T7,T7,S1,S2,S3,S4,S5 \n")
+f.write("Tp,Ip,T1t,T1,T2t,T2,T3t,T3,T4t,T4,T5t,T5,T6t,T6,T7t,T7,S1t,S1,S2t,S2,S3t,S3,S4t,S4,S5t,S5 \n")
 
 def DataWrite(Xp,Yp):
-    #f.write(str(Xp)+",")
+    f.write(str(Xp)+",")
     f.write(str(Yp)+",")
 
 #Itero su tutte le combinazioni dello scenario (con TimeStep = time step finale)
